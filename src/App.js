@@ -25,7 +25,10 @@ class nz_questionaire extends Component {
   render(){
     return(
       <div className="container">
-        <div className>     
+        <div className="title">
+          New Zealand General Knowledge Quiz
+        </div>
+        <div className="questions">     
           {this.state.questionBank.map(
               ({question, answers, questionId}) => (
                 <QuestionBox
