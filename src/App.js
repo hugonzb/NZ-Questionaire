@@ -6,7 +6,8 @@ class nz_questionaire extends Component {
   state = {
     questionBank: [],
     score: 0,
-    responses: 0
+    responses: 0,
+    counter: 30
   };
 
   getQuestions = () => {
@@ -20,19 +21,21 @@ class nz_questionaire extends Component {
   componentDidMount() {
     this.getQuestions();
   }
-  
+
   render(){
     return(
-      <div className="container">   
-        {this.state.questionBank.map(
-            ({question, answers, questionId}) => (
-              <QuestionBox
-                question={question}
-                options={answers}
-                key={questionId}
-                />
-            )  
-          )}
+      <div className="container">
+        <div className>     
+          {this.state.questionBank.map(
+              ({question, answers, questionId}) => (
+                <QuestionBox
+                  question={question}
+                  options={answers}
+                  key={questionId}
+                  />
+              )  
+            )}
+        </div>
       </div>
     )
   }
