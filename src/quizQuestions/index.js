@@ -1,4 +1,4 @@
-const questionBank = [
+const qBank = [
     {
       question: "What is Hugo's surname? Hint: He developed this quiz service",
       answers: ["Bard", "Bezos", "Baird", "Kawamura"],
@@ -302,4 +302,4 @@ const questionBank = [
   ];
   
   export default (n = 5) =>
-    Promise.resolve(questionBank.sort(() => 0.5 - Math.random()).slice(0, n));
+    Promise.resolve(qBank.sort(() => 0.5 - Math.random()).slice(0, n));

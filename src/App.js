@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import quizQuestions from "./quizQuestions";
+import QuestionBox from "./components/QuestionBox";
 
 class nz_questionaire extends Component {
   state = {
@@ -15,10 +16,24 @@ class nz_questionaire extends Component {
       });
     });
   };
+
+  componentDidMount() {
+    this.getQuestions();
+  }
   
   render(){
     return(
-      "hello"
+      <div className="container">   
+        {this.state.questionBank.map(
+            ({question, answers, questionId}) => (
+              <QuestionBox
+                question={question}
+                options={answers}
+                key={questionId}
+                />
+            )  
+          )}
+      </div>
     )
   }
 }
