@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap");
 
 .container {
-  background-color: rgb(27, 87, 47);
+  background-color: rgb(33, 107, 58);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
   align-items: center;
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .title{
@@ -29,7 +29,7 @@
 .questions{
   background-color: rgb(214, 214, 214);
   text-align: center;
-  border: 1px solid rgb(190, 190, 190);
+  border: 1px solid rgb(218, 218, 218);
   border-radius: 0.9rem;
   font-family: 'News Cycle', sans-serif;
   font-weight: bold;
@@ -39,7 +39,7 @@
 }
 
 .questions button{
-  background-color: #2da331; /* Green */
+  background-color: #2da331;
   border: 1px solid green;
   color: white;
   padding: 16px 32px;
@@ -56,7 +56,7 @@
 }
 
 .questions button:hover{
-  background-color: #e2e2e2; /* Green */
+  background-color: #e2e2e2; 
   border: none;
   color: rgb(0, 0, 0);
   padding: 16px 32px;
@@ -69,5 +69,4 @@
   border: 1px solid green;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(8, 235, 8, 0.2), 0 6px 20px 0 rgba(10, 226, 10, 0.19);
-
 }
