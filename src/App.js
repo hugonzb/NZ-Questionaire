@@ -7,6 +7,7 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 class nz_questionaire extends Component {
   state = {
     questionBank: [],
+    answerBank: [],
     score: 0,
     responses: 0,
     counter: 30
@@ -25,7 +26,11 @@ class nz_questionaire extends Component {
       this.setState({
         score: this.state.score + 1
       });
-   }
+    } else {
+      this.setState({
+        answerBank: answer
+      });
+    }
    this.setState({
      responses: this.state.responses < 5 ? this.state.responses + 1 : 5
    });
@@ -44,6 +49,10 @@ class nz_questionaire extends Component {
   }
 
   render(){
+    this.state.answerBank = Array.from(this.state.answerBank);
+    const answers = this.state.answerBank.map(answer => {
+      return <li>{answer}</li>;
+    });
     return(
       <div className="container">
         <div className="title">
@@ -74,7 +83,10 @@ class nz_questionaire extends Component {
               )  
             )}
         </div>
-        {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
+        <ul>
+          {answers}
+        </ul>
+        {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />): null}
       </div>
     )
   }
