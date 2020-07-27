@@ -56,6 +56,9 @@ class nz_questionaire extends Component {
         <div className="title">
           New Zealand General Knowledge Quiz
         </div>
+        <div className="sub-title">
+          Developed by Hugo Baird
+        </div>
         {this.state.questionBank.length > 0 && this.state.responses < 5 ? (        
         <div> 
           <div className="questions">     
@@ -63,9 +66,9 @@ class nz_questionaire extends Component {
             <div className="timer">
               <CountdownCircleTimer
                 isPlaying={true}
-                size= "120"
+                size= "115"
                 duration={this.state.counter}
-                colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+                colors={[["#004777", 0.13], ["#F7B801", 0.13], ["#A30000"]]}
                 onComplete={() => { this.setState({
                   responses: 5
                 }) 

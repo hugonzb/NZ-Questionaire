@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 42rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
@@ -22,7 +23,17 @@
   padding-right: 1rem;
   padding-left: 1rem;
   font-family: 'Amatic SC', cursive;
-  margin-bottom: 1rem;
+  color: white;
+}
+
+.sub-title{
+  text-align: center;
+  font-size: 25px;
+  border-radius: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-family: 'Amatic SC', cursive;
+  margin-bottom: 2rem;
   color: white;
 }
 
@@ -35,6 +46,7 @@
   border-radius: 0.9rem;
   padding: 1rem;
   font-size: 15px;
+  margin-bottom: 1rem;
 }
 
 .questions{
@@ -49,6 +61,7 @@
   font-weight: bold;
   font-size: 25px;
   padding: 2rem;
+  max-width: 50rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
