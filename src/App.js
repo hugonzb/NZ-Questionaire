@@ -10,7 +10,7 @@ class nz_questionaire extends Component {
     answerBank: [],
     score: 0,
     responses: 0,
-    counter: 30
+    counter: 60
   };
 
   getQuestions = () => {
@@ -38,7 +38,7 @@ class nz_questionaire extends Component {
     this.setState({
       score: 0,
       responses: 0,
-      counter: 30,
+      counter: 60,
       answerBank: []
     });
   };
@@ -58,20 +58,28 @@ class nz_questionaire extends Component {
         </div>
         {this.state.questionBank.length > 0 && this.state.responses < 5 ? (        
         <div> 
-          <div>
-            <CountdownCircleTimer
-              isPlaying={true}
-              duration={this.state.counter}
-              colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
-              onComplete={() => { this.setState({
-                responses: 5
-              }) 
-              }}
-            >
-              {({ remainingTime }) => remainingTime}
-            </CountdownCircleTimer>
-          </div>
           <div className="questions">     
+          <div className="timer-container">
+            <div className="timer">
+              <CountdownCircleTimer
+                isPlaying={true}
+                size= "120"
+                duration={this.state.counter}
+                colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+                onComplete={() => { this.setState({
+                  responses: 5
+                }) 
+                }}
+              >
+                {({ remainingTime }) => 
+                <div>
+                  <div>{remainingTime}</div>
+                  <div>Seconds</div>
+                </div>}
+              </CountdownCircleTimer>
+            </div>
+          </div>
+          <div>
             {this.state.questionBank.length > 0 && this.state.responses < 5 && this.state.questionBank.map(
                 ({question, answers, correct, questionId}) => (
                   <QuestionBox
@@ -82,6 +90,7 @@ class nz_questionaire extends Component {
                     />
                 )  
               )}
+            </div>
           </div>
         </div>
         ): null }
