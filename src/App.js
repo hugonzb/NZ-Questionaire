@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import quizQuestions from "./quizQuestions";
 import QuestionBox from "./components/QuestionBox";
+import Result from './components/Result';
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 class nz_questionaire extends Component {
   state = {
@@ -28,6 +30,14 @@ class nz_questionaire extends Component {
      responses: this.state.responses < 5 ? this.state.responses + 1 : 5
    });
   };
+  playAgain = () => {
+    this.getQuestions();
+    this.setState({
+      score: 0,
+      responses: 0,
+      counter: 30
+    });
+  };
 
   componentDidMount() {
     this.getQuestions();
@@ -39,8 +49,21 @@ class nz_questionaire extends Component {
         <div className="title">
           New Zealand General Knowledge Quiz
         </div>
+        <div>
+        {this.state.questionBank.length > 0 && this.state.responses < 5 ? (        <CountdownCircleTimer
+          isPlaying={true}
+          duration={this.state.counter}
+          colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+          onComplete={() => { this.setState({
+            responses: 5
+          }) 
+          }}
+        >
+          {({ remainingTime }) => remainingTime}
+        </CountdownCircleTimer>): null }
+        </div>
         <div className="questions">     
-          {this.state.questionBank.map(
+          {this.state.questionBank.length > 0 && this.state.responses < 5 && this.state.questionBank.map(
               ({question, answers, correct, questionId}) => (
                 <QuestionBox
                   question={question}
@@ -51,6 +74,7 @@ class nz_questionaire extends Component {
               )  
             )}
         </div>
+        {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
       </div>
     )
   }
