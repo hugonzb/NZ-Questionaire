@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.a00179c2.chunk.css",
-    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.5ba5e353.chunk.js",
-    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.5ba5e353.chunk.js.map",
+    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.cdf8677e.chunk.css",
+    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.7db394ea.chunk.js",
+    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.7db394ea.chunk.js.map",
     "runtime-main.js": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js",
     "runtime-main.js.map": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js.map",
-    "static/js/2.392d1212.chunk.js": "/NZ-General-Knowledge-Quiz/static/js/2.392d1212.chunk.js",
-    "static/js/2.392d1212.chunk.js.map": "/NZ-General-Knowledge-Quiz/static/js/2.392d1212.chunk.js.map",
+    "static/js/2.09374008.chunk.js": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js",
+    "static/js/2.09374008.chunk.js.map": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js.map",
     "index.html": "/NZ-General-Knowledge-Quiz/index.html",
-    "precache-manifest.0afba1d28406f881a7e09d0cb01b1573.js": "/NZ-General-Knowledge-Quiz/precache-manifest.0afba1d28406f881a7e09d0cb01b1573.js",
+    "precache-manifest.8a1eb90a380d70550425ee9f05ef8a46.js": "/NZ-General-Knowledge-Quiz/precache-manifest.8a1eb90a380d70550425ee9f05ef8a46.js",
     "service-worker.js": "/NZ-General-Knowledge-Quiz/service-worker.js",
-    "static/css/main.a00179c2.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.a00179c2.chunk.css.map",
-    "static/js/2.392d1212.chunk.js.LICENSE.txt": "/NZ-General-Knowledge-Quiz/static/js/2.392d1212.chunk.js.LICENSE.txt"
+    "static/css/main.cdf8677e.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.cdf8677e.chunk.css.map",
+    "static/js/2.09374008.chunk.js.LICENSE.txt": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d010ddd6.js",
-    "static/js/2.392d1212.chunk.js",
-    "static/css/main.a00179c2.chunk.css",
-    "static/js/main.5ba5e353.chunk.js"
+    "static/js/2.09374008.chunk.js",
+    "static/css/main.cdf8677e.chunk.css",
+    "static/js/main.7db394ea.chunk.js"
   ]
 }
