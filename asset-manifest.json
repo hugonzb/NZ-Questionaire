@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.cdf8677e.chunk.css",
-    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.5e6f13c8.chunk.js",
-    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.5e6f13c8.chunk.js.map",
+    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.0c382f57.chunk.css",
+    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.0bc75e90.chunk.js",
+    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.0bc75e90.chunk.js.map",
     "runtime-main.js": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js",
     "runtime-main.js.map": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js.map",
     "static/js/2.09374008.chunk.js": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js",
     "static/js/2.09374008.chunk.js.map": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js.map",
     "index.html": "/NZ-General-Knowledge-Quiz/index.html",
-    "precache-manifest.6f6637466f0d5fa017e2fc891bc81184.js": "/NZ-General-Knowledge-Quiz/precache-manifest.6f6637466f0d5fa017e2fc891bc81184.js",
+    "precache-manifest.a7812f914a7598633d1c7591c11d411c.js": "/NZ-General-Knowledge-Quiz/precache-manifest.a7812f914a7598633d1c7591c11d411c.js",
     "service-worker.js": "/NZ-General-Knowledge-Quiz/service-worker.js",
-    "static/css/main.cdf8677e.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.cdf8677e.chunk.css.map",
+    "static/css/main.0c382f57.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.0c382f57.chunk.css.map",
     "static/js/2.09374008.chunk.js.LICENSE.txt": "/NZ-General-Knowledge-Quiz/static/js/2.09374008.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d010ddd6.js",
     "static/js/2.09374008.chunk.js",
-    "static/css/main.cdf8677e.chunk.css",
-    "static/js/main.5e6f13c8.chunk.js"
+    "static/css/main.0c382f57.chunk.css",
+    "static/js/main.0bc75e90.chunk.js"
   ]
 }
