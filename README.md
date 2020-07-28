@@ -1,6 +1,6 @@
 # NZ General Knowledge Quiz
 
-[![HitCount](http://hits.dwyl.com/hugonzb/NZ-General-Knowledge-Quiz.svg)](http://hits.dwyl.com/hugonzb/General-Knowledge-Quiz)
+![ViewCount](https://views.whatilearened.today/views/github/hugonzb/General-Knowledge-Quiz.svg)
 <br>
 ## [LIVE Demo Here!](https://hugonzb.github.io/NZ-General-Knowledge-Quiz/)
 
