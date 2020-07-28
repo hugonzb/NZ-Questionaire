@@ -37,6 +37,7 @@ class nz_questionaire extends Component {
   };
   playAgain = () => {
     this.getQuestions();
+    window.scrollTo(0, 0);
     this.setState({
       score: 0,
       responses: 0,
@@ -106,6 +107,7 @@ class nz_questionaire extends Component {
         </div>
         ): null }
         {this.state.responses === 5 ? (
+        window.scrollTo(0, 0),
         <div className="score-board">
           {this.state.timedOut === true ? <div className="timeout">YOU RAN OUT OF TIME</div>:null}
           <Result score={this.state.score} playAgain={this.playAgain} />
