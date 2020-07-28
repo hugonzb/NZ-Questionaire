@@ -58,6 +58,10 @@
   font-size: 20px;
 }
 
+.questionBox{
+  max-width: 40rem;
+}
+
 .questions{
   display: flex;
   flex-direction: column;
