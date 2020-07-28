@@ -11,7 +11,7 @@ class nz_questionaire extends Component {
     correctBank: [],
     score: 0,
     responses: 0,
-    counter: 60
+    counter: 30
   };
 
   getQuestions = () => {
@@ -40,7 +40,7 @@ class nz_questionaire extends Component {
     this.setState({
       score: 0,
       responses: 0,
-      counter: 60,
+      counter: 30,
       timedOut: false,
       incorrectBank: [],
       correctBank: []
