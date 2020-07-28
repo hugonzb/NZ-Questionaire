@@ -111,7 +111,7 @@ class nz_questionaire extends Component {
           <Result score={this.state.score} playAgain={this.playAgain} />
           <div className="correct-board">
           CORRECT    
-          {corrects}
+            {this.state.correctBank.length === 0 ? <div>You got no correct answers</div>: corrects }
           </div>
           <div className="incorrect-board">
           INCORRECT  
