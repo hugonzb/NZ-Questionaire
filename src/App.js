@@ -3,6 +3,8 @@ import quizQuestions from "./quizQuestions";
 import QuestionBox from "./components/QuestionBox";
 import Result from './components/Result';
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faSadCry, faHourglassEnd, faFlushed, faThumbsDown, faThumbsUp, faMeh } from "@fortawesome/free-solid-svg-icons";
 
 class nz_questionaire extends Component {
   state = {
@@ -110,14 +112,21 @@ class nz_questionaire extends Component {
         {this.state.responses === 5 ? (
         window.scrollTo(0, 0),
         <div className="score-board">
-          {this.state.timedOut === true ? <div className="red-banner">YOU RAN OUT OF TIME</div>:null}
-          {this.state.timedOut === false && this.state.score === 0 ? <div className="red-banner">Zero? Are you kidding me?</div>:null}
-          {this.state.timedOut === false && this.state.score === 1 ? <div className="red-banner">Very Poor Score.. :(</div>:null}
-          {this.state.timedOut === false && this.state.score === 2 ? <div className="red-banner">Poor Score.. You can do better!</div>:null}
-          {this.state.timedOut === false && this.state.score === 3 ? <div className="blue-banner">Average Score.. Try Again!</div>:null}
-          {this.state.timedOut === false && this.state.score === 4 ? <div className="green-banner">Decent Score.. Well Done!</div>:null}
-          {this.state.timedOut === false && this.state.score === 5 ? <div className="green-banner">Perfect Score.. Amazing!</div>:null}
-          
+          {this.state.timedOut === true ? <div className="red-banner"><FontAwesomeIcon icon={faHourglassEnd}/> 
+          &nbsp;YOU RAN OUT OF TIME!</div>:null}
+          {this.state.timedOut === false && this.state.score === 0 ? <div className="red-banner"><FontAwesomeIcon icon={faSadCry}/> 
+          &nbsp;Zero? Are you kidding me?..</div>:null}
+          {this.state.timedOut === false && this.state.score === 1 ? <div className="red-banner"><FontAwesomeIcon icon={faFlushed}/> 
+          &nbsp;Well that's embarrasing..</div>:null}
+          {this.state.timedOut === false && this.state.score === 2 ? <div className="red-banner"><FontAwesomeIcon icon={faThumbsDown}/> 
+          &nbsp;Poor score.. You can do better!</div>:null}
+          {this.state.timedOut === false && this.state.score === 3 ? <div className="blue-banner"><FontAwesomeIcon icon={faMeh}/> 
+          &nbsp;Average score.. Try again!</div>:null}
+          {this.state.timedOut === false && this.state.score === 4 ? <div className="green-banner"><FontAwesomeIcon icon={faThumbsUp}/> 
+          &nbsp;Decent score.. Well done!</div>:null}
+          {this.state.timedOut === false && this.state.score === 5 ? <div className="green-banner"><FontAwesomeIcon icon={faStar} spin/> 
+          &nbsp;Perfect score.. Amazing!</div>:null}
+
           <Result score={this.state.score} playAgain={this.playAgain} />
           <div className="correct-board">
           CORRECT    
