@@ -60,6 +60,7 @@
 
 .questionBox{
   max-width: 40rem;
+  margin-bottom: 1rem;
 }
 
 .questions{
@@ -109,6 +110,11 @@
   border: 1px solid green;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(8, 235, 8, 0.2), 0 6px 20px 0 rgba(10, 226, 10, 0.19);
+}
+
+.chosen-answer{
+  padding: 1rem;
+  color: blue
 }
 
 .score-board{
