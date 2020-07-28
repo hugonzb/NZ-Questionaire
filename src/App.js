@@ -11,7 +11,8 @@ class nz_questionaire extends Component {
     correctBank: [],
     score: 0,
     responses: 0,
-    counter: 30
+    counter: 30,
+    timedOut: false
   };
 
   getQuestions = () => {
@@ -109,7 +110,14 @@ class nz_questionaire extends Component {
         {this.state.responses === 5 ? (
         window.scrollTo(0, 0),
         <div className="score-board">
-          {this.state.timedOut === true ? <div className="timeout">YOU RAN OUT OF TIME</div>:null}
+          {this.state.timedOut === true ? <div className="red-banner">YOU RAN OUT OF TIME</div>:null}
+          {this.state.timedOut === false && this.state.score === 0 ? <div className="red-banner">Zero? Are you kidding me?</div>:null}
+          {this.state.timedOut === false && this.state.score === 1 ? <div className="red-banner">Very Poor Score.. :(</div>:null}
+          {this.state.timedOut === false && this.state.score === 2 ? <div className="red-banner">Poor Score.. You can do better!</div>:null}
+          {this.state.timedOut === false && this.state.score === 3 ? <div className="blue-banner">Average Score.. Try Again!</div>:null}
+          {this.state.timedOut === false && this.state.score === 4 ? <div className="green-banner">Decent Score.. Well Done!</div>:null}
+          {this.state.timedOut === false && this.state.score === 5 ? <div className="green-banner">Perfect Score.. Amazing!</div>:null}
+          
           <Result score={this.state.score} playAgain={this.playAgain} />
           <div className="correct-board">
           CORRECT    
