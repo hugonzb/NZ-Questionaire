@@ -7,7 +7,8 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 class nz_questionaire extends Component {
   state = {
     questionBank: [],
-    answerBank: [],
+    incorrectBank: [],
+    correctBank: [],
     score: 0,
     responses: 0,
     counter: 60
@@ -21,13 +22,14 @@ class nz_questionaire extends Component {
     });
   };
 
-  computeAnswer = (answer, correctAnswer) => {
+  computeAnswer = (question, answer, correctAnswer) => {
     if(answer===correctAnswer) {
       this.setState({
-        score: this.state.score + 1
+        score: this.state.score + 1,
       });
+      this.state.correctBank.push(question);
     } else {
-        this.state.answerBank.push(answer);
+        this.state.incorrectBank.push(question);
     }
    this.setState({
      responses: this.state.responses < 5 ? this.state.responses + 1 : 5
@@ -39,7 +41,9 @@ class nz_questionaire extends Component {
       score: 0,
       responses: 0,
       counter: 60,
-      answerBank: []
+      timedOut: false,
+      incorrectBank: [],
+      correctBank: []
     });
   };
 
@@ -48,8 +52,11 @@ class nz_questionaire extends Component {
   }
 
   render(){
-    const answers = this.state.answerBank.map(answer => {
-      return <li>{answer}</li>;
+    const corrects = this.state.correctBank.map(correct => {
+      return <div>{correct}</div>;
+    });
+    const incorrects = this.state.incorrectBank.map(incorrect => {
+      return <div>{incorrect}</div>;
     });
     return(
       <div className="container">
@@ -70,7 +77,8 @@ class nz_questionaire extends Component {
                 duration={this.state.counter}
                 colors={[["#004777", 0.13], ["#F7B801", 0.13], ["#A30000"]]}
                 onComplete={() => { this.setState({
-                  responses: 5
+                  responses: 5,
+                  timedOut: true
                 }) 
                 }}
               >
@@ -89,7 +97,7 @@ class nz_questionaire extends Component {
                     question={question}
                     options={answers}
                     key={questionId}
-                    selected={answer => this.computeAnswer(answer, correct)}
+                    selected={answer => this.computeAnswer(question, answer, correct)}
                     />
                 )  
               )}
@@ -98,14 +106,19 @@ class nz_questionaire extends Component {
         </div>
         ): null }
         {this.state.responses === 5 ? (
-        <div>
-            <Result score={this.state.score} playAgain={this.playAgain} />
-          Incorrect:
-          <ul>
-            {answers}
-          </ul>
-      </div>): null}
-      </div>
+        <div className="score-board">
+          {this.state.timedOut === true ? <div className="timeout">YOU RAN OUT OF TIME</div>:null}
+          <Result score={this.state.score} playAgain={this.playAgain} />
+          <div className="correct-board">
+          CORRECT    
+          {corrects}
+          </div>
+          <div className="incorrect-board">
+          INCORRECT  
+            {this.state.incorrectBank.length === 0 ? <div>You got no incorrect answers</div>: incorrects }
+          </div>
+        </div>): null}
+        </div>
     )
   }
 }
