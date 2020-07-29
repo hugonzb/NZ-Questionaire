@@ -298,6 +298,66 @@ const qBank = [
       answers: ["3 hours", "3 hours and 30 minutes", "4 hours", "10 minutes"],
       correct: "3 hours and 30 minutes",
       questionId: "0050"
+    },
+    {
+      question: "Maori people first arrived in New Zealand how many years ago?",
+      answers: ["850 years ago", "1200 years ago", "1800 years ago", "2400 years ago"],
+      correct: "850 years ago",
+      questionId: "0051"
+    },
+    {
+      question: "What is the nickname of the NZ women’s rugby team?",
+      answers: ["The Black Keys", "The Strong Kiwis", "The Black Ferns", "The Silver Ferns"],
+      correct: "The Black Ferns",
+      questionId: "0052"
+    },
+    {
+      question: "What is the name of the stretch of water that separates the South Island and Stewart Island?",
+      answers: ["Foveaux Strait", "Cook Strait", "Pacific Ocean", "Tasman Sea"],
+      correct: "Cook Strait",
+      questionId: "0053"
+    },
+    {
+      question: "Which colour is the Maori word ma used for?",
+      answers: ["Black", "Green", "White", "Pink"],
+      correct: "White",
+      questionId: "0054"
+    },
+    {
+      question: "Who is the famous NZ cartoonist who created Footrot Flats?",
+      answers: ["Dick Frizzel", "Murray Ball", "Colin McCahon", "Rita Angus"],
+      correct: "Murray Ball",
+      questionId: "0055"
+    },
+    {
+      question: "Which NZ city is the first to see the sunrise each day?",
+      answers: ["Auckland", "Napier", "Tekapo", "Gisborne"],
+      correct: "Gisborne",
+      questionId: "0056"
+    },
+    {
+      question: "New Zealand was the second country in the world to institute..?",
+      answers: ["A public school system", "A driving licence", "A Reserve Bank", "An old age pension"],
+      correct: "An old age pension",
+      questionId: "0057"
+    },
+    {
+      question: "When did New Zealand join the United Nations?",
+      answers: ["1945", "1909", "1970", "1983"],
+      correct: "1945",
+      questionId: "0058"
+    },
+    {
+      question: "What is the highest ranked University in New Zealand?",
+      answers: ["University of Otago", "Victoria University", "University of Canterbury", "University of Auckland"],
+      correct: "University of Auckland",
+      questionId: "0059"
+    },
+    {
+      question: "Where was New Zealand singer Lorde born?",
+      answers: ["Dunedin", "North Shore", "Christchurch", "Nelson"],
+      correct: "North Shore",
+      questionId: "0060"
     }
   ];
   
