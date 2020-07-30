@@ -1,7 +1,7 @@
 const qBank = [
     {
-      question: "What is Hugo's surname? Hint: He developed this quiz service",
-      answers: ["Bard", "Bezos", "Baird", "Kawamura"],
+      question: "What is Hugo's surname?",
+      answers: ["Bard", "Bezos", "Baird", "Barid"],
       correct: "Baird",
       questionId: "0001"
     },
@@ -229,7 +229,7 @@ const qBank = [
     },
     {
       question: "What was Sir Edmund Hillary's original job in NZ",
-      answers: ["Programmer", "Accountant", "Beekeeper", "DJ"],
+      answers: ["Programmer", "Accountant", "Beekeeper", "Plumber"],
       correct: "Beekeeper",
       questionId: "0039"
     },
@@ -295,7 +295,7 @@ const qBank = [
     },
     {
       question: "How long does it take to drive from Dunedin to Wanaka?",
-      answers: ["3 hours", "3 hours and 30 minutes", "4 hours", "10 minutes"],
+      answers: ["3 hours", "3 hours and 30 minutes", "4 hours", "6 hours"],
       correct: "3 hours and 30 minutes",
       questionId: "0050"
     },
@@ -318,7 +318,7 @@ const qBank = [
       questionId: "0053"
     },
     {
-      question: "Which colour is the Maori word ma used for?",
+      question: "Which colour is the Maori word 'ma' used for?",
       answers: ["Black", "Green", "White", "Pink"],
       correct: "White",
       questionId: "0054"
