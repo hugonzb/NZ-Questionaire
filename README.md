@@ -5,7 +5,7 @@
 ## [LIVE Demo Here!](https://hugonzb.github.io/NZ-General-Knowledge-Quiz/)
 
 ## Features
-**1. Questions are chosen at random from a list of 50.**
+**1. Questions are chosen at random from a list of 60.**
 
 **2. Timer counts down from 30 seconds.**
 

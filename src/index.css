@@ -18,7 +18,7 @@
 .answer{
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgb(124, 124, 124);
+  border-bottom: 1px solid rgb(156, 156, 156);
 }
 
 .answer:last-child{
@@ -58,6 +58,8 @@
   padding: 1rem;
   font-size: 15px;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .red-banner{
@@ -67,6 +69,7 @@
   border-radius: 0.5rem;
   color: white;
   font-size: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blue-banner{
@@ -76,6 +79,7 @@
   border-radius: 0.5rem;
   color: white;
   font-size: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .green-banner{
@@ -85,6 +89,7 @@
   border-radius: 0.5rem;
   color: white;
   font-size: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .questionBox{
@@ -158,6 +163,7 @@
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   max-width: 50rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .playBtn{
@@ -186,6 +192,7 @@
   font-size: 25px;
   padding: 2rem;
   font-family: 'News Cycle', sans-serif;
+  box-shadow: 0 2px 10px 0 rgba(30, 255, 0, 0.2), 0 2px 20px 0 rgba(21, 122, 8, 0.19);
 }
 
 .incorrect-board{
@@ -200,10 +207,11 @@
   font-size: 25px;
   padding: 2rem;
   font-family: 'News Cycle', sans-serif;
+  box-shadow: 0 2px 10px 0 rgba(247, 6, 6, 0.2), 0 2px 20px 0 rgba(238, 7, 7, 0.19);
 }
 
 .correct-header{
-  color: green;
+  color: rgb(30, 139, 30);
   margin-bottom: 1rem;
 }
 

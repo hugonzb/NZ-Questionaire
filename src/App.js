@@ -134,7 +134,7 @@ class nz_questionaire extends Component {
           &nbsp;Average score.. Try again!</div>:null}
           {this.state.timedOut === false && this.state.score === 4 ? <div className="green-banner"><FontAwesomeIcon icon={faThumbsUp}/> 
           &nbsp;Decent score.. Well done!</div>:null}
-          {this.state.timedOut === false && this.state.score === 5 ? <div className="green-banner"><FontAwesomeIcon icon={faStar} spin/> 
+          {this.state.timedOut === false && this.state.score === 5 ? <div className="green-banner"><FontAwesomeIcon color="gold" icon={faStar} spin/> 
           &nbsp;Perfect score.. Amazing!</div>:null}
 
           <Result score={this.state.score} playAgain={this.playAgain} />
