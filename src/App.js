@@ -89,7 +89,7 @@ class nz_questionaire extends Component {
                 isPlaying={true}
                 size= "115"
                 duration={this.state.counter}
-                colors={[["#004777", 0.13], ["#F7B801", 0.13], ["#A30000"]]}
+                colors={[["#004777", 0.5], ["#F7B801", 0.3], ["#A30000", 0.2]]}
                 onComplete={() => { this.setState({
                   responses: 5,
                   timedOut: true
