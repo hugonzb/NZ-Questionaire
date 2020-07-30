@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d04c800b5cef13fe1d6facd516669f2a",
+    "revision": "a36801acf8ad121f44268d1ad741da21",
     "url": "/NZ-General-Knowledge-Quiz/index.html"
   },
   {
-    "revision": "50341a05ab1105d84f8a",
+    "revision": "6ed771bfa03811b331cc",
     "url": "/NZ-General-Knowledge-Quiz/static/css/main.3d704d74.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NZ-General-Knowledge-Quiz/static/js/2.2d20f991.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50341a05ab1105d84f8a",
-    "url": "/NZ-General-Knowledge-Quiz/static/js/main.729a20ab.chunk.js"
+    "revision": "6ed771bfa03811b331cc",
+    "url": "/NZ-General-Knowledge-Quiz/static/js/main.0c0fd746.chunk.js"
   },
   {
     "revision": "48befd1651ea92be53ba",
