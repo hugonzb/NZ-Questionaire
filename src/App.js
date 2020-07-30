@@ -57,10 +57,10 @@ class nz_questionaire extends Component {
 
   render(){
     const corrects = this.state.correctBank.map(correct => {
-      return <div>{correct}</div>;
+      return <div className="answer">{correct}</div>;
     });
     const incorrects = this.state.incorrectBank.map(incorrect => {
-      return <div>{incorrect}</div>;
+      return <div className="answer">{incorrect}</div>;
     });
     return(
       <div className="container">
@@ -129,11 +129,15 @@ class nz_questionaire extends Component {
 
           <Result score={this.state.score} playAgain={this.playAgain} />
           <div className="correct-board">
-          CORRECT    
+            <div className="correct-header">
+              CORRECT
+            </div>
             {this.state.correctBank.length === 0 ? <div>You got no correct answers</div>: corrects }
           </div>
           <div className="incorrect-board">
-          INCORRECT  
+            <div className="incorrect-header">
+              INCORRECT
+            </div>
             {this.state.incorrectBank.length === 0 ? <div>You got no incorrect answers</div>: incorrects }
           </div>
         </div>): null}

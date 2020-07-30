@@ -15,6 +15,12 @@
   padding-bottom: 3rem;
 }
 
+.answer{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(124, 124, 124);
+}
+
 .title{
   text-align: center;
   font-size: 50px;
@@ -190,3 +196,14 @@
   padding: 2rem;
   font-family: 'News Cycle', sans-serif;
 }
+
+.correct-header{
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.incorrect-header{
+  color: red;
+  margin-bottom: 1rem;
+}
+
