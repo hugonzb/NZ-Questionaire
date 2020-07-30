@@ -10,6 +10,9 @@
 **2. Timer counts down from 30 seconds.**
 
 **3. Correct and incorrect answers are displayed at the end.**
+
+
+**4. Response design and mobile-friendly.**
 <br>
 
 ## Run the project in your environment
