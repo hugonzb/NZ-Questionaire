@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap");
 
 .container {
-  background-color: rgb(33, 107, 58);
+  background-color: rgb(41, 121, 68);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -19,6 +19,12 @@
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+.answer:last-child{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0px;
 }
 
 .title{
@@ -39,7 +45,6 @@
   padding-right: 1rem;
   padding-left: 1rem;
   font-family: 'Amatic SC', cursive;
-  margin-bottom: 2rem;
   color: white;
 }
 
@@ -205,5 +210,15 @@
 .incorrect-header{
   color: red;
   margin-bottom: 1rem;
+}
+
+.github{
+  max-width: 3rem;
+  margin-right: 0.2rem;
+}
+
+.linkedin{
+  padding-bottom: 2px;
+  max-width: 2.6rem;
 }
 

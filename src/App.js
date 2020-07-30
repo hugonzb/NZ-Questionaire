@@ -5,6 +5,8 @@ import Result from './components/Result';
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faSadCry, faHourglassEnd, faFlushed, faThumbsDown, faThumbsUp, faMeh } from "@fortawesome/free-solid-svg-icons";
+import githubwhite from './images/github.png';
+import linkedinblue from './images/linkedinblue.png';
 
 class nz_questionaire extends Component {
   state = {
@@ -69,6 +71,14 @@ class nz_questionaire extends Component {
         </div>
         <div className="sub-title">
           Developed by Hugo Baird
+        </div>
+        <div>
+          <a href="https://github.com/hugonzb">
+            <img className="github" src={githubwhite} alt="github"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/hugo-baird/">
+            <img className="linkedin" src={linkedinblue} alt="linkedin"></img>
+          </a>
         </div>
         {this.state.questionBank.length > 0 && this.state.responses < 5 ? (        
         <div> 
