@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.0c382f57.chunk.css",
-    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.b128d8b1.chunk.js",
-    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.b128d8b1.chunk.js.map",
+    "main.css": "/NZ-General-Knowledge-Quiz/static/css/main.8b6a3f7c.chunk.css",
+    "main.js": "/NZ-General-Knowledge-Quiz/static/js/main.729a20ab.chunk.js",
+    "main.js.map": "/NZ-General-Knowledge-Quiz/static/js/main.729a20ab.chunk.js.map",
     "runtime-main.js": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js",
     "runtime-main.js.map": "/NZ-General-Knowledge-Quiz/static/js/runtime-main.d010ddd6.js.map",
-    "static/js/2.28dfb984.chunk.js": "/NZ-General-Knowledge-Quiz/static/js/2.28dfb984.chunk.js",
-    "static/js/2.28dfb984.chunk.js.map": "/NZ-General-Knowledge-Quiz/static/js/2.28dfb984.chunk.js.map",
+    "static/js/2.2d20f991.chunk.js": "/NZ-General-Knowledge-Quiz/static/js/2.2d20f991.chunk.js",
+    "static/js/2.2d20f991.chunk.js.map": "/NZ-General-Knowledge-Quiz/static/js/2.2d20f991.chunk.js.map",
     "index.html": "/NZ-General-Knowledge-Quiz/index.html",
-    "precache-manifest.16eef77683f047a18eecae6c870b95c1.js": "/NZ-General-Knowledge-Quiz/precache-manifest.16eef77683f047a18eecae6c870b95c1.js",
+    "precache-manifest.c07e6674681258b53d794f3ae288210d.js": "/NZ-General-Knowledge-Quiz/precache-manifest.c07e6674681258b53d794f3ae288210d.js",
     "service-worker.js": "/NZ-General-Knowledge-Quiz/service-worker.js",
-    "static/css/main.0c382f57.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.0c382f57.chunk.css.map",
-    "static/js/2.28dfb984.chunk.js.LICENSE.txt": "/NZ-General-Knowledge-Quiz/static/js/2.28dfb984.chunk.js.LICENSE.txt"
+    "static/css/main.8b6a3f7c.chunk.css.map": "/NZ-General-Knowledge-Quiz/static/css/main.8b6a3f7c.chunk.css.map",
+    "static/js/2.2d20f991.chunk.js.LICENSE.txt": "/NZ-General-Knowledge-Quiz/static/js/2.2d20f991.chunk.js.LICENSE.txt",
+    "static/media/github.png": "/NZ-General-Knowledge-Quiz/static/media/github.567fc5c4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d010ddd6.js",
-    "static/js/2.28dfb984.chunk.js",
-    "static/css/main.0c382f57.chunk.css",
-    "static/js/main.b128d8b1.chunk.js"
+    "static/js/2.2d20f991.chunk.js",
+    "static/css/main.8b6a3f7c.chunk.css",
+    "static/js/main.729a20ab.chunk.js"
   ]
 }

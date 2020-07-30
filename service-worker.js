@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NZ-General-Knowledge-Quiz/precache-manifest.16eef77683f047a18eecae6c870b95c1.js"
+  "/NZ-General-Knowledge-Quiz/precache-manifest.c07e6674681258b53d794f3ae288210d.js"
 );
 
 self.addEventListener('message', (event) => {
